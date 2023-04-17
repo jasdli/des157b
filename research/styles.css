@@ -1,0 +1,24 @@
+h1{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 50px;
+}
+body{
+    background-color: beige;
+}
+p{
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: bisque;
+    border-bottom: 3px dotted cornflowerblue;
+}
+.selfie{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
