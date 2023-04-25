@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Blockbuster Video!</title>
+</head>
+<body>
+    <video id="concertVid" poster="images/concert.png" autoplay loop playsinline>
+        <source src="media/9E45EC4A-90CC-411F-B31F-972162373D36.webm" type="video/webm">
+        <source src="media/9E45EC4A-90CC-411F-B31F-972162373D36.mp4" type="video/mp4">
+        <p>Your browser doesn't support html video. Here is a <a href="media/9E45EC4A-90CC-411F-B31F-972162373D36.mp4">link to the video</a>instead.</p>
+    </video>
+    <section id="controls">
+        <i class="fa-solid fa-play"></i>
+        <i class="fas fa-volume-up"></i>
+        <input id="volumeLevel" type="range" min="0" max="100" step="1">
+    </section>
+
+</body>
+</html>
