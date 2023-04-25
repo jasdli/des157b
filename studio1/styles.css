@@ -1,5 +1,107 @@
+body{
+    display: flex;
+    background-color: black;
+
+}
+section{
+    width: 50%;
+}
+video{
+    max-width: 50%;
+}
 #controls {
     position: absolute;
     bottom: 10%;
     right: 10%;
 }
+ /* scrolling text*/
+.scroll-container {
+    border-top: 3px solid rgb(243, 241, 241);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 30pt;
+    color: aliceblue;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .scroll-text1 {
+    animation: marquee1 20s linear infinite;
+    text-align: left;
+    direction: rtl;
+  }
+  .scroll-text2{
+    text-align: right;
+    direction: rtl;
+    animation: marquee2 20s linear infinite;
+  }
+  .scroll-text1 span {
+    display: inline-block;
+    direction: ltr;
+  }
+  .scroll-text2 span {
+    display: inline-block;
+    direction: rtl;
+  }
+  @keyframes marquee1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .carpe-diem{
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 50pt;
+    padding-top: 400px;
+    color: aliceblue;
+      border-bottom: 5px blue dotted;
+      position: absolute;
+      padding-bottom: 0px;
+
+    }
+
+    
+    .carpe-diem:hover {
+      animation-name: rotate;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(200deg);
+      opacity: 0.5;
+    }
+    to {
+      transform: rotate(360deg);
+      opacity: 0.2;
+    }
+   
+  
+  }
+  
+  
+  
+  
+
+  
+  
+ 
