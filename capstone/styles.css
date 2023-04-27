@@ -1,0 +1,25 @@
+h1{
+    font-family: 'Sigmar', cursive;
+    text-align: center;
+}
+h1 span{
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(206, 172, 172);
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color:rgb(206, 172, 172);
+    border-radius: 20px;
+    border-top: rgb(50, 23, 23) 10px solid;
+    font-size: 20px;
+    text-indent: 1.5em; 
+  margin-left: 300px;
+  margin-right: 300px;
+}
+body{
+    background-color: rgb(147, 63, 63);
+}

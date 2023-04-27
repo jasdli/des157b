@@ -61,7 +61,7 @@ video{
       transform: translateX(100%);
     }
   }
-
+/* bottom text animation*/
   .carpe-diem{
     font-family: 'Bruno Ace SC', cursive;
     font-size: 50pt;
