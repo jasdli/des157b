@@ -2,23 +2,47 @@ h1{
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-size: 50px;
+    color: #86A69D;
+ 
+}
+h2{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 30px;
+    color: #F2B263;
+
 }
 body{
-    background-color: beige;
+    background-color: #F2E8DF;
 }
 p{
     font-family: 'Dongle', sans-serif;
     font-size: 30px;
     box-sizing: border-box;
     padding: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: bisque;
-    border-bottom: 3px dotted cornflowerblue;
+    background-color: #F2B263;
+    border: 10px dotted#86A69D;
+    text-indent: 1.5em; 
+  margin-left: 300px;
+  margin-right: 300px;
 }
 .selfie{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+img{
+
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+}
+h2 span{
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+ background-color:  #86A69D;
+
 }
