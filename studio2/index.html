@@ -7,70 +7,171 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/8ade9659fe.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@1&family=Bungee+Shade&family=Cinzel:wght@700&family=Mate+SC&family=Modak&family=Oi&family=Oswald:wght@500&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  
+
+
     <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
 
 </head>
 <body>
-    <!--previous button-->
     <button id="prev-btn">
-        <i class="fas fa-arrow-circle-left"></i>
+        <i class="fa-solid fa-chevron-left"></i>
     </button>
-    <!--book-->
+
+    <!-- The Book -->
     <div id="book" class="book">
-        <div id="pg1" class="paper">
+        <!-- Page 1 -->
+        <div id="p1" class="paper">
             <div class="front">
                 <div id="f1" class="front-content">
-                    <h1>page1</h1>
+                    <h1 class="book-title">The Boyz Pamphlet</h1>
+                    <img class="cover-img" src="images/tbzimg.jpg" alt="tbzimg">
                 </div>
             </div>
             <div class="back">
-                <div id="ba1" class="back-content">
-                    <h1>back1</h1>
+                <div id="b1" class="back-content">
+                    <h2></h2>
+                    <div class="content">
+                        <h1>REVEAL</h1>
+                        <img class="reveal" src="images/reveal.jpeg" alt="reveal">
+                        <p>Song List</p>
+                        <ul>
+                            <li>Break your rules</li>
+                            <li>Wings</li>
+                            <li>REVEAL</li>
+                            <li>Salty</li>
+                            <li>Spring Snow</li>
+                            <li>Goodbye</li>
+                            <li>Ego</li>
+                            <li>Scar</li>
+                            <li>Shake You Down</li>
+                          </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="pg2" class="paper">
+        <!-- Page 2 -->
+        <div id="p2" class="paper">
             <div class="front">
                 <div id="f2" class="front-content">
-                    <h1>page2</h1>
+                    <h1>BE AWARE</h1>
+                    <img class="beaware" src="images/beaware.jpeg" alt="beaware">
+                    <p>Song List</p>
+                    <ul>
+                        <li>Levitating</li>
+                        <li> WHISPER</li>
+                        <li> Survive The Night</li>
+                        <li>Bump & Love</li>
+                        <li>Timeless</li>
+                      </ul>
                 </div>
             </div>
             <div class="back">
-                <div id="ba2" class="back-content">
-                    <h1>back2</h1>
+                <div id="b2" class="back-content">
+                    <h1>BE AWAKE</h1>
+                    <img class="beawake" src="images/beawake.jpeg" alt="beawake">
+                    <p>Song List</p>
+                    <ul>
+                        <li>Savior</li>
+                        <li>ROAR</li>
+                        <li>Diamond Life</li>
+                        <li>Blah Blah</li>
+                      </ul>
                 </div>
             </div>
         </div>
-        <div id="pg3" class="paper">
+        <!-- Page 3 -->
+        <div id="p3" class="paper">
             <div class="front">
                 <div id="f3" class="front-content">
-                    <h1>page1</h1>
+                    <h1>CHASE</h1>
+                    <img class="chase" src="images/chase.jpeg" alt="chase">
+                    <p>Song List</p>
+                    <ul>
+                        <li>The Stealer</li>
+                        <li>Whiplash</li>
+                        <li>Shine Shine</li>
+                        <li>Make or Break</li>
+                      </ul>
                 </div>
             </div>
             <div class="back">
-                <div id="ba3" class="back-content">
-                    <h1>back1</h1>
-                </div>
-            </div>
-        </div>
-        <div id="pg4" class="paper">
-            <div class="front">
-                <div id="f4" class="front-content">
-                    <h1>page1</h1>
-                </div>
-            </div>
-            <div class="back">
-                <div id="ba4" class="back-content">
-                    <h1>back1</h1>
+                <div id="b3" class="back-content">
+                    <h1>THRILL-ING</h1>
+                    <img class="thrilling" src="images/thrilling.jpeg" alt="thrilling">
+                    <p>Song List</p>
+                    <ul>
+                        <li>THRILL RIDE</li>
+                        <li>Merry Bad Ending</li>
+                      </ul>
                 </div>
             </div>
         </div>
     </div>
-    
-     <!--previous button-->
-     <button id="next-btn">
-        <i class="fas fa-arrow-circle-right"></i>
+    <!-- Page 4
+    <div id="p4" class="paper">
+        <div class="front">
+            <div id="f4" class="front-content">
+                <h1>An Amazing Page</h1>
+                <p>MAVERICK</p>
+                <ul>
+                    <li>MAVERICK</li>
+                  </ul>
+            </div>
+        </div>
+        <div class="back">
+            <div id="b4" class="back-content">
+                <h1>The Good Bye</h1>
+                <p>THE ONLY</p>
+                <ul>
+                    <li>No Air</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+ Page 5
+<div id="p5" class="paper">
+    <div class="front">
+        <div id="f5" class="front-content">
+            <h1>An Amazing Page</h1>
+            <p>All About You</p>
+            <ul>
+                <li>All About You</li>
+              </ul>
+        </div>
+    </div>
+    <div class="back">
+        <div id="b5" class="back-content">
+          <h1>The Good Bye</h1>
+        
+        </div>
+    </div>
+</div>
+</div>-->
+
+
+    <button id="next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
     </button>
-    
+
+    <footer id="footer">
+        <p>Source</p>
+        <figure>
+        <figcaption><cite><a href="https://wallpaperaccess.com/the-boyz-desktop">The Boyz Photo</a></cite> by WallpapaerAccess</figcaption>
+        <figcaption> <cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F14tNUeer5gUbUYvhYYTclS&psig=AOvVaw2HKLBtJuUwZIGKpFzKxLQa&ust=1683096758353000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDtn5qG1v4CFQAAAAAdAAAAABAD">Reveal album photo</a></cite> from Spotify </figcaption>
+        <figcaption><cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F6D8I9oW0ALsppfPzY9ysXR&psig=AOvVaw1t4T3UuHONmxYeEYzBbm2p&ust=1683096915504000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCJDb4uCG1v4CFQAAAAAdAAAAABAD">Be Aware album photo</a></cite> from Spotify </figcaption>
+        <figcaption><cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F1rxSHvDHLjLdz7x8G4Ssy5&psig=AOvVaw2IlExQcDKDwKhVU5bYNsen&ust=1683097014864000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCPD7ipKH1v4CFQAAAAAdAAAAABAD">Be Awake album photo </a></cite> from Spotify </figcaption>
+        <figcaption><cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F6HwY3FwprtqsmMuoLnXWhT&psig=AOvVaw0C3ol4ZED7kv0XTbf7okWf&ust=1683097486239000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCLCOxPCI1v4CFQAAAAAdAAAAABAD">Chase album photo</a></cite> from Spotify </figcaption>
+        <figcaption><cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F0lh0pZ8GjZGrAhzIG4Jn0E&psig=AOvVaw0wzrfVnJqXyI_SHD7JMANc&ust=1683097541513000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCLC_s4yJ1v4CFQAAAAAdAAAAABAD">THRILL-ING album photo</a></cite> from Spotify </figcaption>
+        </figure>
+    </footer>   
 </body>
 </html>
