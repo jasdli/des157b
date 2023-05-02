@@ -1,4 +1,7 @@
-
+(function(){
+    'user strict';
+    'reading js';
+})();
 const prevBtn = document.querySelector('#prev-btn');
 const nextBtn = document.querySelector('#next-btn');
 const book = document.querySelector('#book');
@@ -13,7 +16,7 @@ const paper5 = document.querySelector('#p5')
 prevBtn.addEventListener("click", goPrevious);
 nextBtn.addEventListener("click", goNext);
 
-// Business Logic
+// book page
 let currentState = 1;
 let numOfPapers = 5;
 let maxState = numOfPapers + 1;
