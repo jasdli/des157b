@@ -38,66 +38,6 @@ function closeBook(isFirstPage) {
     nextBtn.style.transform = "translateX(0px)";
 }
 
-/*function goNext() {
-    if(currentState < maxState) { 
-        switch(currentState) {
-            case 1:
-                openBook();
-                paper1.classList.add("flipped");
-                paper1.style.zIndex = 1;
-                break;
-            case 2:
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 2;
-                break;
-            case 3:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 3;
-                break;
-            case 4:
-                paper4.classList.add("flipped");
-                paper4.style.zIndex = 4;
-                break;
-            case 5:
-                closeBook(false);
-                paper5.classList.add("flipped");
-                paper5.style.zIndex = 5;
-                break;        
-            default: 
-                throw new Error("unkown state");    
-        }
-
-        currentState++;
-    }
-}
-
-function goPrevious() {
-    if(currentState > 1) {
-        switch(currentState) {
-            case 2:
-                closeBook(true);
-                paper1.classList.remove("flipped");
-                paper1.style.zIndex = 4;
-                break;
-            case 3:
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex = 3;
-                break;
-            case 4: 
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 2;
-                break;
-            case 5:
-                openBook()
-                paper4.classList.remove("flipped");
-                paper4.style.zIndex = 1;
-                break;
-        }
-
-        currentState--;
-    }
-    */
-
 function goNext() {
     if(currentState < maxState) { 
         switch(currentState) {

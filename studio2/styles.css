@@ -102,24 +102,8 @@ i {
     transform: rotateY(-180deg)
 }
 
-/* Paper Z-index 
-#p1 {
-    z-index: 5;
-}
+/* Paper Z-index */
 
-#p2 {
-    z-index: 4;
-}
-
-#p3 {
-    z-index: 3;
-}
-#p4{
-    z-index: 2;
-}
-#p5{
-    z-index: 1;
-}*/
 #p1 {
     z-index: 3;
 }
