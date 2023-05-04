@@ -145,3 +145,9 @@ function goPrevious() {
         currentState--;
     }
 }
+async function getData(){
+    const theData = await fetch('data.json');
+    const data = await theData.json();
+    console.log(data);
+}
+getData();
