@@ -37,7 +37,15 @@ img{
     margin-left: 100px;
 }
 a{
-   /* text-decoration: none;*/
+    text-decoration: none;
+    text-align: center;
+    color: #F2B263;
+    font-size: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 450px;
+    margin-right: 50px;
+
 }
 h2 span{
     box-sizing: border-box;
