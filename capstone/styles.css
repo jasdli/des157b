@@ -1,25 +1,57 @@
-h1,h2{
-    font-family: 'Sigmar', cursive;
-    text-align: center;
-}
-h1 span{
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(206, 172, 172);
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color: rgb(118, 92, 58);
+
+
 }
 p{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    padding: 30px;
-    background-color:rgb(206, 172, 172);
-    border-radius: 20px;
-    border-top: rgb(50, 23, 23) 10px solid;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-indent: 1em;
+    padding-top: 10px;
+    width: 80%;
+   /* padding-left: 350px;
+    padding-right: 350px;*/
     font-size: 20px;
-    text-indent: 1.5em; 
-  margin-left: 300px;
-  margin-right: 300px;
 }
-body{
-    background-color: rgb(147, 63, 63);
+h1,p{
+    margin: 0 0 0.35em;
 }
+img{
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;*/
+
+    float: left; /* replaces the style previously inherited by the browser */
+    margin: 10px 16px 16px -10px;
+    
+}
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+  }
+  
+header {
+    background-color: antiquewhite;;
+    color: #fff;
+  }
+  body > footer {
+    border-top: 3px solid antiquewhite;
+  }
+footer{
+    background: linear-gradient(45deg, rgb(246, 245, 234), transparent);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    border-radius: 4px;
+}
+.watermark{
+    color: rgb(118, 92, 58);
+    font-family: 'Anton', sans-serif;
+    font-size: 10px;
+    text-align: right;
+}
+
