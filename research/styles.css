@@ -36,15 +36,19 @@ img{
 
     margin-left: 100px;
 }
-a{
+a{  display: block;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 20px;
+    background-color: #86A69D;
     text-decoration: none;
     text-align: center;
     color: #F2B263;
-    font-size: 30px;
-    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
     border-radius: 10px;
-    padding: 450px;
-    margin-right: 50px;
+
+
 
 }
 h2 span{
