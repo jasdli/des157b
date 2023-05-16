@@ -54,4 +54,18 @@ footer{
     font-size: 10px;
     text-align: right;
 }
+.flow{
+    background-color: antiquewhite;
+}
+.flow h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.flowimg{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
 

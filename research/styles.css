@@ -55,3 +55,9 @@ h2 span{
  background-color:  #86A69D;
 
 }
+.moodboard{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}

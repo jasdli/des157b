@@ -28,6 +28,16 @@ const popup = L.popup()
     
     map.on('click', onMapClick);
 
+    const coffeeIcon = L.icon({
+        iconUrl: 'images/coffee.png',
+    
+        iconSize:     [38, 95], // size of the icon
+        iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+        shadowAnchor: [4, 62],  // the same for the shadow
+        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+    L.marker([	38.5639426043, -121.472421579], {icon: coffeeIcon}).addTo(map).bindPopup("I am a green leaf.");
+
    // different restaurants
     /*const littleton = L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.'),
     denver    = L.marker([39.74, -104.99]).bindPopup('This is Denver, CO.'),
