@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(241, 237, 237);
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(10, 10, 10);
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            display: block;
+            padding: 50px;
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Change this H1</h1>
+
+    <p>Add a short description of your function, what it does and where you got it. You can pull it from some other project you have, or you can create a function from scratch that does something simple and straight forward. Don't just use one of Bill and Glenda's examples though.</p>
+
+    <h2>Named Function</h2>
+    <code>
+        <pre>
+            const greeting = (fname, lname) => `Hello ${fname} ${lname}`;
+            console.log(greeting('Jasmine', 'Li'));
+            To do this, I made a named function by creating a variable and tags the function.
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            function addition (num1, num2, num3){
+                return num1 + num2 +num3;
+            }
+            const addition = (num1, num2, num3) => num1 + num2 + num3;
+            }
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const numbers = [1, 2, 3, 4, 5];
+            console.log(numbers.reduce(callbackFn, currentIndex) => callbackFn + currentIndex));
+        </pre>
+    </code>
+
+    <footer> Jasmine Li </footer>
+
+    <h1>Arrow Functions Example</h1>
+    <script>
+         /*function makeUpperCase(aString){
+            return aString.toUpperCase();
+         }
+    
+        console.log(makeUpperCase("here is a string"));*/
+       /* const makeUpperCase = function(aString){
+            return aString.toUpperCase();
+        } 
+        
+        console.log(makeUpperCase("here is a string"));*/
+       const makeUpperCase = aString => {
+       return aString.toUpperCase();
+       }
+       console.log(makeUpperCase("here is a string"));
+       /* const makeUpperCase = aString => aString.toUpperCase();
+        
+        console.log(makeUpperCase("here is a string"));*/
+        const fullName  = (fname,lname)=> `${fname} ${lname}`;
+        console.log(fullName('Jasmine', 'Li'));
+       /* const fullName = () =>{
+            const fname = "Jasmine";
+            const lname = "Li";
+            return `${fname} ${lname}`;
+        }*/
+        const fruit = ["banana", "apple", "lemon", "kiwi",];
+        const upperFruit =[];
+       /* fruit.forEach(function(thisFruit){
+            upperFruit.push(thisFruit.toUpperCase());
+        });*/
+      fruit.forEach(thisFruit =>{
+            upperFruit.push(thisFruit.toUpperCase());
+        });
+        console.log(upperFruit);
+
+    /*   const employee = function(fname, lname, jobTitle){
+        this.fname= fname;
+            this.lname = lname;
+            this.position = jobTitle;
+            this.fullName = function(){
+                return `${fname} ${lname}`;
+       }
+    }
+    const id1234 = new employee('Bob', 'Smith', 'Mechanic');
+    console.log(id1234.fname);
+        console.log(id1234.fullName());*/
+
+        const employee = function(fname, lname, jobTitle){
+            this.fname= fname;
+            this.lname = lname;
+            this.position = jobTitle;
+            this.fullName = ()=> `${fname} ${lname}`;
+        }
+        const id1234 = new employee('Bob', 'Smith', 'Mechanic');
+    console.log(id1234.fname);
+        console.log(id1234.fullName());
+
+    
+        /*const employee = (fname, lname, jobTitle) => {
+            this.fname = fname;
+            this.lname = lname;
+            this.position = jobTitle;
+            this.fullName = () => `${fname} ${lname}`;
+        }
+        const id1234 = new employee('Bob', 'Smith', 'Mechanic');
+        console.log(id1234.fname);
+        console.log(id1234.fullName());*/
+
+        const greeting = (fname, lname) => `Hello ${fname} ${lname}`;
+        console.log(greeting('Jasmine', 'Li'));
+
+        const square = x => x * x;
+        console.log(square(2));
+        //4
+        const largestNum = (num1, num2) => num1 > num2 ? num1 : num2;
+        console.log(largestNum(45,22));
+
+        const animals = ['llama', 'chicken', 'dog', 'cat'];
+        animals.forEach(eachAnimal => {
+            const upperCase = eachAnimal.toUpperCase();
+            console.log(upperCase);
+        });
+        const scores = [5, 10, 15, 20];
+        console.log(scores.reduce((accumulator, curValue)=> accumulator+curValue));
+
+    </script>
+    
+</body>
+</html>
