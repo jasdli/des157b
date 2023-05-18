@@ -68,4 +68,11 @@ footer{
     margin-left: auto;
     width: 100%;
 }
+.sketch{
+    display: block;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: 250px;
+    width: 60%;
+}
 
