@@ -14,7 +14,7 @@
  crossorigin=""></script>
  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
-
+ <!-- fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -23,9 +23,28 @@
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 
+    <!--/ /-------- Load Parse Library --------/ /-->
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+
 </head>
 <body>
-    <div class="flex-container">
+    <main>
+        <h1>upload a file</h1>
+        <form id="upload">
+            <label for="fileupload">Upload a file</label>
+            <input type="file" id="fileupload">
+
+            <label for="title">Add a Title</label>
+            <input type="text" id="title">
+
+            <label for="desciption">Add a Description</label>
+            <textarea id="description" cols="50" rows ="8"></textarea>
+
+            <input type="submit" value="send file">
+        </form>
+    </main>
+    <!-- fonts  <div class="flex-container">
     <div id="map"></div>
     <div id="temple">
         <h1>Temple Coffee Roasters</h1>
@@ -33,12 +52,8 @@
         <p>Why I recommend this</p>
         <img src ="images/TEMPLE_RGB_BLK.png" alt="temple logo" width="200" height="150">
     </div>
-    <div id="myburma" class="hidden">
-        <h1>Temple Coffee Roasters</h1>
-        <p>500 1st St #11, Davis, CA 95616</p>
-        <p>Why I recommend this</p>
-        <img src ="images/TEMPLE_RGB_BLK.png" alt="temple logo" width="200" height="150">
-    </div>
+    
 </div>
+-->
 </body>
 </html>

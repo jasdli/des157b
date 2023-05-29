@@ -1,5 +1,45 @@
 #map { 
-width: 1000px;
-height: 700px;
-padding-right: 200px;
-padding-left: 200px;}
+width: 600px;
+height: 600px;
+margin-top: 50px;
+margin-left:50px ;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Cherry Bomb One', cursive;
+    text-align: center;
+}
+h2, p{
+    font-family: 'Ubuntu', sans-serif;
+}
+#front{
+    background-image: url(images/davis.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   opacity: 0.7;
+    height: 600px;
+
+}
+.intro{
+    padding-top: 50px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: black;
+    text-decoration: none;
+    opacity: 100%;
+}
+.intro a:hover{
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}

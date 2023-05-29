@@ -1,0 +1,16 @@
+[{
+    "Place" :"Apartment",
+    "Address" : "1213 Alvarado Ave, Davis CA 95616",
+    "Reason" : "This is where I live" 
+
+},
+{ "Place" :"Trader Joe's",
+    "Address" : "885 Russell Blvd, Davis, CA 95616",
+    "Reason" : "My favorite grocery place" 
+
+},
+{ "Place" :"Cruess Hall",
+    "Address" : "375 California Ave, Davis, CA 95616",
+    "Reason" : "This is my most frequent visited student hall, because I have most of my classes here." 
+
+}]

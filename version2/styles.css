@@ -20,15 +20,8 @@ body{
     padding:20px;
     background-color: #654842;
 }
-#myburma{
-    width: 500px;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
+label, input{
     display: block;
-    padding:20px;
-    background-color: #F3CC40;  
-}
-.hidden{
-    display: none;
+    margin: auto;
+    margin-bottom: 1em;
 }

@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
+  <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+      <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="path/to/aos.js"></script>
      <!-- Make sure you put this AFTER Leaflet's CSS -->
  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
@@ -20,6 +29,21 @@
 
 </head>
 <body>
+    <header id="front">
+        <div data-aos="fade-up" data-aos-duration="1000">
+        <h1>Jasmine's Davis Life</h1>
+        <p class="intro">Created by <a href="https://leafletjs.com/examples.html">Leaflet</a>and <a href="https://michalsnik.github.io/aos">Animate on Scroll</a> libraries</p>
+        </div>
+    </header>
+    <section>
     <div id="map"></div>
+    <main id="container">
+        <h2>Places I visited</h2>
+        <p>Click the icons on map to know more</p>
+        
+    </main>
+</section>
+  
+</div>
 </body>
 </html>
