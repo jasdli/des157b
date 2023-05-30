@@ -1,0 +1,31 @@
+body{
+    background-color: #FEFFE9;
+    font-family: 'Poppins', sans-serif;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+#map { 
+    width: 500px;
+    height: 700px;
+    display: flex;
+}
+#title{
+    text-align: center;
+    margin-top: 0%;
+}
+#temple{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    display: block;
+    padding:20px;
+    background-color: #654842;
+}
+label, input{
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
