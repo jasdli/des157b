@@ -1,0 +1,11 @@
+body{
+    background-color: #FEFFE9;
+    font-family: 'Poppins', sans-serif;
+    color: #2E3105;
+   margin-right: 300px;
+   margin-left: 300px;
+
+}
+h1, h2, h3{
+    text-align: center;
+}
