@@ -18,6 +18,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ <!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Document</title>
     <link href="styles.css" rel="stylesheet">
@@ -28,7 +31,8 @@
 
 
 </head>
-<body>
+<body> 
+    <div data-aos="fade-down"  data-aos-duration="2000">
     <header id="home">
     <p id="title">foodguide</p>
     <span class="heading1">Finding Davis Local Restaurants</span><br>
@@ -36,22 +40,12 @@
     <p><a href="#seal-connection" class="home-button">Connect to the Seal</a></p>
   </div> 
 </header>
-    <div class="header-section">
-        <div class="header-image">
-            <div class="header-content">
-                <div class="header-text">
-                    <div class="header-headline-wrap">
-                        <div class="label cover w-inline-block">DES 157B Capstone Project</div>
-                        <div class="header-headline">foodguide</div>
-                        <p>content about project</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 <!-- 
     <div class="flex-container"> -->
+        <div data-aos="zoom-in-up">
         <div id="map"></div>
+    </div>
     <!--  <div id="temple">
             <h1>Temple Coffee Roasters</h1>
             <p>Address: 239 G St, Davis, CA 95616</p>
@@ -60,13 +54,15 @@
         </div>
      
     </div> -->
+    <div data-aos="fade-up" data-aos-duration="3000">
     <main>
-        <h1>upload a file</h1>
+        
         <form id="upload">
-            <label for="fileupload">Upload a file</label>
+            <h1>Upload Your Food Image to the Gallery</h1>
+            <label for="fileupload">Upload to Share Your Memories! You will also able to browse the gallery. </label>
             <input type="file" id="fileupload">
 
-            <label for="title">Add a Title</label>
+            <label for="title">Your Name</label>
             <input type="text" id="title">
 
             <label for="desciption">Add a Description</label>
@@ -75,17 +71,19 @@
             <input class="send" type="submit" value="send file">
         </form>
     </main>
+</div>
     <div id="uploaded-img">
 
     
     </div>
-
+    <div data-aos="flip-up"  data-aos-duration="2000">
     <h1>How is it connect to the Davis Centennial Seal</h1>
-    <section id="seal-connection">
+    <section id="seal-connection" >
         <h1>How is it connect to the Davis Centennial Seal</h1>
         <p>The local restaurants in Davis have a deep-rooted connection to the agricultural aspect depicted in the Davis Centennial Seal. As a city with a rich farming heritage, Davis's culinary scene celebrates the region's abundant agricultural resources. Local restaurants proudly embrace the farm-to-table concept, sourcing ingredients directly from nearby farms and showcasing the freshest produce. By partnering with local farmers and incorporating locally grown ingredients into their menus, these restaurants pay homage to the agricultural legacy of Davis. Each bite tells a story of the fields, the farmers' dedication, and the vibrant flavors that come from the fertile soil. By supporting these local establishments, we not only savor the delicious creations but also nurture the agricultural traditions that have shaped the city's identity for generations. The bond between the local restaurants and the agricultural aspect of the seal reinforces the enduring relationship between Davis's culinary excellence and its roots in the bountiful farmlands that surround it.</p>
         <img id="seal" src="images/01-Flatened-hd-seal-colorized.jpg" width="500" height="500"> 
     </section>
+</div>
 
 </body>
 </html>

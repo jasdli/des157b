@@ -7,9 +7,12 @@ body{
     justify-content: center;
 }
 #map { 
-    width: 500px;
+    width: 700px;
     height: 700px;
     display: flex;
+    margin-top: 50px;
+    margin-left:50px ;
+    margin-bottom: 50px;
 }
 #title{
     text-align: center;
@@ -67,12 +70,30 @@ border-radius: 20px;
     padding: 30px;
     background-color: #DFE777;
     box-sizing: border-box;
-    box-shadow: 2px #2E3105;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     border-radius: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
   
     padding-left: 20px;
     padding-right: 20px;
+
     
+}
+#upload{
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: #FFFDC1;
+    border-radius: 20px;
+}
+textarea{
+    align-self: center;
 }
 h1{
     text-align: center;
@@ -85,3 +106,7 @@ p{
     margin-right: 50px;
 
 }
+#uploaded-img{
+ display: block;
+}
+
