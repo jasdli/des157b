@@ -66,7 +66,49 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-const marker = L.marker([38.5414, -121.7410]).addTo(map);
+const coffeeIcon = L.icon({
+  iconUrl: 'images/cup.png',
+  iconSize: [48, 35],
+  iconAnchor: [22, 94],
+  shadowAnchor: [4, 62],
+  popupAnchor: [-3, -76]
+});
+L.marker([38.544123,-121.7391475], { icon: coffeeIcon }).addTo(map);
+marker.bindPopup("<b>temple coffee</b><br>239 G St, Davis, CA 95616").openPopup();
+
+const noodleIcon = L.icon({
+  iconUrl: 'images/noodle.png',
+  iconSize: [48, 35],
+  iconAnchor: [22, 94],
+  shadowAnchor: [4, 62],
+  popupAnchor: [-3, -76]
+});
+L.marker([38.5464673,-121.7400401], { icon: noodleIcon }).addTo(map);
+marker.bindPopup("<b>lazi cow</b><br>407 G St #4, Davis, CA 95616").openPopup();
+
+
+const sandwichIcon = L.icon({
+  iconUrl: 'images/sandwich.png',
+  iconSize: [48, 35],
+  iconAnchor: [22, 94],
+  shadowAnchor: [4, 62],
+  popupAnchor: [-3, -76]
+});
+L.marker([38.543598, -121.739962], { icon: sandwichIcon }).addTo(map);
+marker.bindPopup("<b>ike's sandwiches</b><br>212 F St b, Davis, CA 95616").openPopup();
+
+const pizzaIcon = L.icon({
+  iconUrl: 'images/pizza.png',
+  iconSize: [48, 35],
+  iconAnchor: [22, 94],
+  shadowAnchor: [4, 62],
+  popupAnchor: [-3, -76]
+});
+L.marker([38.5441597, -121.7389437], { icon: pizzaIcon }).addTo(map);
+marker.bindPopup("<b>Woodstock Piza Davis</b><br> 238 G St, Davis, CA 95616").openPopup();
+
+
+/*const marker = L.marker([38.5414, -121.7410]).addTo(map);
 marker.bindPopup("<b>Hello world!</b><br>My Burma").openPopup();
 
 const popup = L.popup()
@@ -80,4 +122,4 @@ const popup = L.popup()
         fillOpacity: 0.5,
         radius: 20
     }).addTo(map);
-    circle.bindPopup("Woodstock Piza Davis");
+    circle.bindPopup("Woodstock Piza Davis");*/
