@@ -62,7 +62,18 @@
   }
   
   // This is a good place to write a function that clears out the form.
-  
+  /*const inputs = document.querySelectorAll("#file input:not([type=submit])");
+
+  async function addFriend(){
+    const newFriend ={};
+  }
+  for (let i=0; i<inputs.length; i++){
+    let key = inputs[i].getAttribute('name');
+    let value = inputs[i].value;
+    newFriend[key]= value;
+  }
+  if(newFriend)*/
+
   //map
   (function () {
     'use strict';
@@ -72,6 +83,20 @@
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
   
+  const farmerIcon = L.icon({
+    iconUrl: 'images/farmers.png',
+    iconSize: [38, 25],
+    iconAnchor: [22, 94],
+    shadowAnchor: [4, 62],
+    popupAnchor: [-3, -76]
+  });
+  const farmerMarker = L.marker([38.544251,-121.743769], { icon: farmerIcon });
+  farmerMarker.addTo(map);
+  farmerMarker.addEventListener('click', function(){
+    showPopupContent("<strong>Restaurant:</strong> Davis Farmers' Market<br><strong>Address:</strong> 301 C St, Davis, CA 95616 <img src='images/.jpeg'> <strong>Reason:</strong> ");
+  });
+
+
   const coffeeIcon = L.icon({
     iconUrl: 'images/cup.png',
     iconSize: [38, 25],
@@ -89,23 +114,23 @@
   const cafeMarker = L.marker([38.5431628,-121.738657], { icon: coffeeIcon });
   cafeMarker.addTo(map);
   cafeMarker.addEventListener('click', function(){
-    showPopupContent("<strong>Restaurant:</strong> Three Ladies Cafe<br><strong>Address:</strong> 130 G St Suite A, Davis, CA 95616");
+    showPopupContent("<strong>Restaurant:</strong> Three Ladies Cafe<strong>Address:</strong> 130 G St Suite A, Davis, CA 95616 <img src='images/3.png'> <strong>Reason:</strong> Three Ladies Cafe prepared its exceptional vegan cuisine using locally sourced, wholesome ingredients. The cafe's menu presents an array of tantalizing options, including the gluten-free turmeric toast, delectable roasted tomato sandwich, and invigorating quinoa salad.");
   });
 
-  /*marker.bindPopup("<b>temple coffee</b><br>239 G St, Davis, CA 95616").openPopup();*/
+  
   const riceIcon = L.icon({
-    iconUrl: 'images/.png',
+    iconUrl: 'images/rice.png',
     iconSize: [38, 25],
     iconAnchor: [22, 94],
     shadowAnchor: [4, 62],
     popupAnchor: [-3, -76]
   });
 
-  /*const riceMarker = L.marker([38.5598886,-121.7569803], { icon: riceIcon });
+  const riceMarker = L.marker([38.5598886,-121.7569803], { icon: riceIcon });
   riceMarker.addTo(map);
   riceeMarker.addEventListener('click', function(){
-    showPopupContent("<strong>Restaurant:</strong>Chickpeas Kitchen<br><strong>Address:</strong> 640 W Covell Blvd, Davis, CA 95616, USA");
-  });*/
+    showPopupContent("<strong>Restaurant:</strong>Chickpeas Kitchen<br><strong>Address:</strong> 640 W Covell Blvd, Davis, CA 95616, USA <img src='images/4.jpeg'> <strong>Reason:</strong> At Chickpeas, patrons have the unique opportunity to customize their own vegan mix, offering a delightful and personalized dining experience. The restaurant takes pride in crafting their own gluten-free green falafel and delectable vegan shawarma, showcasing their culinary expertise and commitment to plant-based excellence.");
+  });
 
 
   const noodleIcon = L.icon({
@@ -116,11 +141,12 @@
     popupAnchor: [-3, -76]
   });
 
+
   const noodleMarker = L.marker([38.5464673,-121.7400401], { icon: noodleIcon });
-  /*marker.bindPopup("<b>lazi cow</b><br>407 G St #4, Davis, CA 95616").openPopup();*/
+  
   noodleMarker.addTo(map);
   noodleMarker.addEventListener('click', function() {
-    showPopupContent("<strong>Restaurant:</strong> Lazi Cow<br><strong>Address:</strong> 407 G St #4, Davis, CA 95616 <img src='images/1.jpeg'><strong>Reason:</strong> Lazi Cow is an authentic East/Southeast Asian food restaurant with a dedicated vegan menu called Chay Corner. Enjoy locally-sourced vegan options such as fresh bread, spring rolls, pho, and banh mi sandwiches. ");
+    showPopupContent("<strong>Restaurant:</strong> Lazi Cow<br><strong>Address:</strong> 407 G St #4, Davis, CA 95616 <img src='images/1.jpeg'><strong>Reason:</strong> Lazi Cow is an authentic East/Southeast Asian food restaurant with a dedicated vegan menu called Chay Corner. Enjoy locally-sourced vegan options such as fresh bread, spring rolls, pho, and banh mi sandwiches.");
   });
   
   const sandwichIcon = L.icon({
@@ -131,10 +157,10 @@
     popupAnchor: [-3, -76]
   });
   const sandwichMarker = L.marker([38.543598, -121.739962], { icon: sandwichIcon });
-  /*marker.bindPopup("<b>ike's sandwiches</b><br>212 F St b, Davis, CA 95616").openPopup();*/
+
   sandwichMarker.addTo(map);
   sandwichMarker.addEventListener('click', function() {
-  showPopupContent("<strong>Restaurant:</strong> Ike's Sandwiches<br><strong>Address:</strong> 212 F St b, Davis, CA 95616");
+  showPopupContent("<strong>Restaurant:</strong> Ike's Sandwiches<br><strong>Address:</strong> 212 F St b, Davis, CA 95616 <img src='images/5.jpeg'><strong>Reason:</strong>Ike's Sandwiches boasts an impressive array of vegan food options to cater to diverse dietary preferences. The menu features Ike's veggie sandwiches, which tantalize the taste buds with an assortment of vegan cheese, delectable faux meats, and specially crafted vegan bread.");
 });
 
   const pizzaIcon = L.icon({
@@ -145,16 +171,15 @@
     popupAnchor: [-3, -76]
   });
   const pizzaMarker = L.marker([38.5441597, -121.7389437], { icon: pizzaIcon });
-  /*marker.bindPopup("<b>Woodstock Piza Davis</b><br> 238 G St, Davis, CA 95616").openPopup();*/
   pizzaMarker.addTo(map);
   pizzaMarker.addEventListener('click', function() {
-  showPopupContent("Restaurant: Woodstock Pizza Davis<br>Address: 238 G St, Davis, CA 95616");
+  showPopupContent("Restaurant: Woodstock Pizza Davis<br>Address: 238 G St, Davis, CA 95616 <img src='images/woodstock.png'><strong>Reason:</strong>Woodstock's Pizza Davis is a renowned pizza destination nestled in downtown Davis. Beyond serving mouthwatering pizzas, it serves as a vibrant social hub for the Davis community. Vegan pizza enthusiasts will be delighted to find a range of options, including the gluten-free cauliflower crust and the delectable Daiya vegan cheese. Indulge");
 });
 
 const pizza2Marker = L.marker([38.543543,-121.738813], { icon: pizzaIcon });
 pizza2Marker.addTo(map);
 pizza2Marker.addEventListener('click', function() {
-showPopupContent("<strong>Restaurant:</strong>Village Bakery, Davis<br><strong>Address:</strong> Chamber of Commerce, 814 2nd St, Davis, CA 95616");
+showPopupContent("<strong>Restaurant:</strong>Village Bakery, Davis<br><strong>Address:</strong> Chamber of Commerce, 814 2nd St, Davis, CA 95616 <img src='images/6.jpeg'><strong>Reason:</strong> Village Bakery is a charming bakery/pizzeria that prides itself on crafting homemade food using locally sourced fruits and vegetables. Their pizzas feature organic tomatoes as the base sauce, and a majority of the pizzas available are vegetarian-friendly.");
 });
 
 function showPopupContent(content) {
@@ -162,6 +187,7 @@ function showPopupContent(content) {
   popupElement.innerHTML = content;
 }
   })();
+  
   AOS.init();
 
 

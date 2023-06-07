@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>
+ <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+ <!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ <!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <!--/ /-------- Load Parse Library --------/ /-->
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+
+</head>
+<body> 
+      <!--/ /---
+    <div data-aos="fade-down" data-aos-duration="2000">
+        <header id="home">
+          <div class="container">
+            <h1 id="title" class="animate__animated animate__zoomIn">foodguide</h1>
+            <h2 class="heading1 animate__animated animate__fadeInLeft">Finding Davis Local Restaurants</h2>
+            <h3 class="heading2 animate__animated animate__fadeInRight">Upload your food images to the photo gallery!</h3>
+            <a href="#seal-connection" class="home-button animate__animated animate__fadeInUp">Connect to the Seal</a>
+          </div>
+        </header>
+      </div>
+      --/ /-->
+      <div data-aos="fade-down" data-aos-duration="2000">
+        <header id="home">
+          <div class="container">
+            <h1 id="title" class="animate__animated animate__zoomIn">Dine & Snap: Davis Food Trail</h1>
+            <h2 class="heading1 animate__animated animate__fadeInLeft">Finding Davis Local Restaurants</h2>
+            <h3 class="heading2 animate__animated animate__fadeInRight">Upload your food images to the photo gallery!</h3>
+            <a href="#seal-connection" class="home-button animate__animated animate__fadeInUp">Connect to the Seal</a>
+          </div>
+        </header>
+      </div>
+      
+      
+
+
+<!-- 
+    <div class="flex-container"> -->
+        <div data-aos="zoom-in-up" id="map-container">
+        <div id="map"></div>
+        <div id="popup-content"></div>
+    </div>
+    <!--  <div id="temple">
+            <h1>Temple Coffee Roasters</h1>
+            <p>Address: 239 G St, Davis, CA 95616</p>
+            <p>Why I recommend this</p>
+            <img src ="images/TEMPLE_RGB_BLK.png" alt="temple logo" width="200" height="150">
+        </div>
+     
+    </div> -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+    <main>
+        
+        <form id="upload">
+            <h1>Upload Your Food Image to the Gallery</h1>
+            <label for="fileupload">Upload to Share Your Memories! You will also able to browse the gallery. </label>
+            <label for="fileupload" class="upload-button"></label>
+            <input type="file" id="fileupload">
+            <label for="title">Your Name</label>
+            <input type="text" id="title">
+
+            <label for="desciption">Add a Description</label>
+            <textarea id="description" cols="50" rows ="8"></textarea>
+
+            <input class="send" type="submit" value="send file">
+            
+        </form>
+    </main>
+</div>
+    <div id="uploaded-img" class="hidden">
+
+    
+    </div>
+    <div data-aos="fade-up" data-aos-duration="2000">
+        <section id="seal-connection">
+          <h1>How is it connected to the Davis Centennial Seal</h1>
+          <div class="content">
+            <p>The local restaurants in Davis have a deep-rooted connection to the agricultural aspect depicted in the Davis Centennial Seal. As a city with a rich farming heritage, Davis's culinary scene celebrates the region's abundant agricultural resources. Local restaurants proudly embrace the farm-to-table concept, sourcing ingredients directly from nearby farms and showcasing the freshest produce.</p>
+            <p>By partnering with local farmers and incorporating locally grown ingredients into their menus, these restaurants pay homage to the agricultural legacy of Davis. Each bite tells a story of the fields, the farmers' dedication, and the vibrant flavors that come from the fertile soil.</p>
+            <p>By supporting these local establishments, we not only savor the delicious creations but also nurture the agricultural traditions that have shaped the city's identity for generations. The bond between the local restaurants and the agricultural aspect of the seal reinforces the enduring relationship between Davis's culinary excellence and its roots in the bountiful farmlands that surround it.</p>
+          </div>
+          <button id="read-more-button" onclick="toggleContent()">Read More</button>
+          <img id="seal" src="images/01-Flatened-hd-seal-colorized.jpg" width="500" height="500">
+        </section>
+      </div>
+      
+
+</body>
+</html>
