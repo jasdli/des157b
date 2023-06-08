@@ -33,7 +33,8 @@ nav ul li a {
 }
 
 header, footer {
-    background-color: rgb(235, 235, 235);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 header, section, footer {
@@ -41,7 +42,7 @@ header, section, footer {
 }
 
 section:nth-child(even){
-    background-color: aliceblue;
+    background-color: rgb(234, 240, 197);
 }
 
 .container {
@@ -63,6 +64,9 @@ ol li {
 
 img {
     margin-bottom: 20px;
+}
+#summary p{
+    width: 80%;
 }
 
 @media only screen and (min-width: 768px) {
