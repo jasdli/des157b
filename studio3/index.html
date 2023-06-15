@@ -8,42 +8,58 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
-  <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-      <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="path/to/aos.js"></script>
      <!-- Make sure you put this AFTER Leaflet's CSS -->
  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
  crossorigin=""></script>
  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
-    <title>Document</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+ <!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Jasmine's Davis Life</title>
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 
+
 </head>
-<body>
-    <header id="front">
-        <div data-aos="fade-up" data-aos-duration="1000">
-        <h1>Jasmine's Davis Life</h1>
-        <p class="intro">Created by <a href="https://leafletjs.com/examples.html">Leaflet</a>and <a href="https://michalsnik.github.io/aos">Animate on Scroll</a> libraries</p>
+<body> 
+    <div data-aos="fade-down" data-aos-duration="2000">
+        <header id="front">
+          <div class="header-overlay"></div>
+          <div class="header-content">
+            <h1 class="header-title animate-typewriter">Jasmine's Davis Life</h1>
+            <p class="header-subtitle">Created with <a href="https://leafletjs.com/examples.html" class="link">Leaflet</a> Library and <a href="https://michalsnik.github.io/aos/" class="link">AOS</a> Library</p>
+          </div>
+        </header>
+      </div>
+      
+      
+ 
+      
+
+        <div data-aos="zoom-in-up" id="map-container">
+        <div id="map"></div>
+        <div id="popup-content"></div>
+    </div>
+    <footer>
+        <div class="footer-content">
+        <p class="author">- Image Citations</p>
+          <p class="citation"><a href="https://theaggie.org/2022/05/19/best-matcha-temple-coffee/" class="link">Photo by Quinn Spooner</a></p>
+          <p class="citation"><a href="https://centennial.ucdavis.edu/timeline/history/namesakes/cruess.html" class="link">UC Davis archival photo</a></p>
+          <p class="citation"><a href="https://locations.traderjoes.com/ca/davis/182/" class="link">Trader Joe's</a></p>
+          <p class="citation"><a href="https://www.davisapartmentsforrent.com/fountaincircle/photo-gallery/" class="link">Fountain Circle Townhomes</a></p>
+         
         </div>
-    </header>
-    <section>
-    <div id="map"></div>
-    <main id="container">
-        <h2>Places I visited</h2>
-        <p>Click the icons on map to know more</p>
-        
-    </main>
-</section>
-  
-</div>
+      </footer>
+      
+   
 </body>
 </html>
